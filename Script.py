@@ -9,42 +9,6 @@ def is_enabled(value, default):
         return False
     else:
         return default
-        
-from telegram.ext import Updater, CommandHandler
-import os
-import json
-
-# Function to handle the /start command
-def start(update, context):
-    user_id = update.effective_user.id
-    if user_id in context.bot_data['allowed_ids']:
-        context.bot.send_message(chat_id=user_id, text='Welcome! You are allowed to use this bot.')
-    else:
-        context.bot.send_message(chat_id=user_id, text='Sorry, you are not allowed to use this bot.')
-
-def main():
-    # Load bot token and allowed user IDs from app.json
-    with open('app.json') as file:
-        config = json.load(file)
-        TOKEN = config['TOKEN']
-        allowed_ids = config['allowed_ids']
-
-    # Create an Updater object and attach the dispatcher
-    updater = Updater(token=TOKEN, use_context=True)
-    dispatcher = updater.dispatcher
-
-    # Add the command handler for the /start command
-    start_handler = CommandHandler('start', start)
-    dispatcher.add_handler(start_handler)
-
-    # Pass the allowed_ids to the bot_data for access in handlers
-    dispatcher.bot_data['allowed_ids'] = allowed_ids
-
-    # Start the bot
-    updater.start_polling()
-
-if __name__ == '__main__':
-    main()
 
 class script(object):
     START_TXT = """<b>Hᴇʏ {} ɪᴍ 『 ᴍᴏᴠɪᴇs ғɪʟᴛᴇʀ ʙᴏᴛ 』 ᴀɴ Aᴡᴇsᴏᴍᴇ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ + Fɪʟᴇ Sʜᴀʀᴇ Bᴏᴛ.</b>
