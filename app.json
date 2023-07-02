@@ -78,13 +78,4 @@
             "size": "free"
         }
     }
-
-    {
-  "TOKEN": "YOUR_BOT_TOKEN",
-  "allowed_ids": [
-    1395772318,
-    
-  ]
-}
-
 }
