@@ -12,32 +12,32 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '23292000'))
-API_HASH = environ.get('API_HASH', 'be15e99b531e98b996bd4518fffe162d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6137983745:AAGcmeBFPFC2mDuaBRyZkPZFfhZRDCZXO_Y')
+API_ID = int(environ.get('API_ID', '22217932'))
+API_HASH = environ.get('API_HASH', 'd722db74da63a9e46ba2dcba49c69a4c')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6286741434:AAEGoZXP57U-pSPJ2f1-Umqd-qe19PDJK34')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/Cs-04-23')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '969099516, 1758343727').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001543052371 ').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1395772318').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '--1001798968357 ').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001780128949')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001962622157')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://WALDY:WALDYY@cluster0.7at5zew.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Waldy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TamilanBotsZ_Support')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'WaldyWritings_Bot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
@@ -69,6 +69,6 @@ AUTO_DELETE = environ.get('AUTO_DELETE', True)
 if AUTO_DELETE == "True":
     AUTO_DELETE = True
 
-SHORTNER_SITE = environ.get('SHORTNER_SITE', 'omegalinks.in') 
-SHORTNER_API = environ.get('SHORTNER_API','c2d78a2519d484e84426c464b938353a0a9c6f8d')
+SHORTNER_SITE = environ.get('SHORTNER_SITE', '') 
+SHORTNER_API = environ.get('SHORTNER_API','')
 
