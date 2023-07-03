@@ -14,7 +14,7 @@ class script(object):
 - Get Access - https://telegram.me/Waldy_writings  
 
 <b>DEVS:</b>
-- <a href=https://t.me/waldy_writings>Team @waldy_writingss</a>"""
+- <a href=https://t.me/waldy_writings>Team @waldy_writings</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and our bot will respond whenever a keyword is found the message
@@ -31,7 +31,7 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- WALDY WRITINGSS SEARCH BOT Supports both url and alert inline buttons.
+- WALDY WRITINGS SEARCH BOT Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
@@ -39,7 +39,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:http://t.me/Waldy_Writingss_SearchBot)</code>
+<code>[Button Text](buttonurl:http://t.me/Prvt_Waldy_Search_Bot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -66,7 +66,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of WALDY WRITINGSS SEARCH BOT
+these are the extra features of WALDY WRITINGS SEARCH BOT
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
@@ -96,7 +96,7 @@ This module only works for my admins
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 
-★ Powered BY @WALDY_WRITINGSS"""
+★ Powered BY @WALDY_WRITINGS"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
