@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '22217932'))
 API_HASH = environ.get('API_HASH', 'd722db74da63a9e46ba2dcba49c69a4c')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6286741434:AAEGoZXP57U-pSPJ2f1-Umqd-qe19PDJK34')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6098378295:AAFC-W4vOQR-urC-kwhHwPCFNbxh_gek42g')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
@@ -36,7 +36,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Waldy")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001405818976'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'WaldyWritings_Bot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
